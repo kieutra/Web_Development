@@ -1,0 +1,233 @@
+.container{
+  width: 100%;
+}
+main{
+  width: 75%;
+  margin: auto;
+  background-color: white;
+}
+
+h2{
+  font-size: 2rem;
+  padding: 2rem 0;
+  text-align: center;
+}
+.deliveryForm{
+  background-color: rgb(100, 182, 127);
+}
+
+/* MENU FORM */
+.menu_order{
+  display: flex;
+  justify-content: space-around;
+  border: 2px dashed black;
+}
+
+h3{
+  font-size: 1.5rem;
+}
+td:nth-child(odd) input{
+  width: 20px;
+  height: 20px;
+}
+td:nth-child(even) input{
+  height: 20px;
+}
+label{
+  font-size: 1.5rem;
+}
+.dish{
+  margin-top: 1rem;
+}
+.quantity{
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+/* BUTTON */
+.button{
+  padding: 3rem 0;
+  text-align: center;
+}
+#calculate, #clearAll{
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 12px;
+  padding: 0.3rem;
+  margin: 3rem;
+}
+#next{
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 12px;
+  padding: 0.3rem;
+}
+
+/* TOTAL FORM */
+.totalForm{
+  border: 2px solid;
+  margin: auto;
+  width: 30%;
+}
+.totalForm div{
+  outline: 1px solid black;
+}
+.totalForm p{
+  text-align: center;
+  color: white;
+}
+.totalForm div:nth-child(1) p, 
+.totalForm div:nth-child(4) p{
+  font-size: 2rem;
+  text-align: center;
+}
+
+footer{
+  position: relative;
+}
+
+
+/*---------------------------Tablet--------------------------*/
+@media (max-width: 1007px) {
+
+  /* Language Button */
+.langBtn{
+  position: absolute;
+  top: 1.5rem;
+  right: 3rem;
+}
+.langBtn img{
+  width: 18px;
+  height: 16px;
+  padding-right: 5px;
+}
+.langBtn a{
+  text-decoration: none;
+  color: white;
+}
+.btn{
+  height: 2rem;
+  width: 4rem;
+  border: none;
+  border-radius: 12px;
+  background-color: rgb(100, 182, 127);
+  font-size: 1.3rem;
+}
+
+/* MAIN */
+
+  main{
+    width: 100%;
+    /* height: 135vh; */
+    padding: 0;
+    margin: 0;
+  }
+  [lang=fr] main{
+    width: 100%;
+    /* height: 145vh; */
+    padding: 0;
+    margin: 0;
+  }
+  h2{
+    font-size: 2rem;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  .quantity{
+    margin: 0
+  }
+
+  /* BUTTON */
+.button{
+  padding:0;
+  text-align: center;
+}
+#calculate, #clearAll{
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 12px;
+  padding: 0.3rem;
+  margin-right: 3rem;
+}
+#next{
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 12px;
+  padding: 0.3rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+}
+/*---------------------------Mobile iphone pro--------------------------*/
+@media (max-width: 640px) {
+  /* LANGUAGE BUTTON */
+  .btn{
+    height: 1.5rem;
+    width: 2.5rem;
+    border: none;
+    border-radius: 12px;
+    background-color: white;
+    font-size: 0.8rem;
+  }
+  .langBtn{
+    position: absolute;
+    top: 2.4rem;
+    right: 0rem;
+  }
+  .langBtn a{
+    text-decoration: none;
+    color: green;
+  }
+  .langBtn img{
+    width: 14px;
+    height: 12px;
+    padding: 0;
+  }
+
+  /* MENU FORM */
+.menu_order{
+  display: block;
+  justify-content: center;
+  border: 2px dashed black;
+}
+.maindish_delivery, 
+.sidedish_delivery{
+  margin-bottom: 2.5rem;
+}
+/* BUTTON */
+#calculate, #clearAll{
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 12px;
+  padding: 0.3rem;
+  margin: 1rem;
+}
+/* TOTAL FORM */
+.totalForm{
+  border: 2px solid;
+  margin: auto;
+  width: 80%;
+}
+.totalForm div{
+  outline: 1px solid black;
+}
+.totalForm p{
+  text-align: center;
+  color: white;
+}
+.totalForm div:nth-child(1) p, 
+.totalForm div:nth-child(4) p{
+  font-size: 2rem;
+  text-align: center;
+}
+main{
+  position: relative;
+}
+footer{
+  display: block;
+  position: relative;
+  margin-top: 2rem;
+}
+
+
+}

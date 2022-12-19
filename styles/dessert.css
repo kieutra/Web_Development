@@ -1,0 +1,244 @@
+/* Language Button */
+.langBtn {
+  position: absolute;
+  top: 3rem;
+  right: 5rem;
+}
+
+.langBtn img {
+  width: 18px;
+  height: 16px;
+  padding-right: 5px;
+}
+
+.langBtn a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  height: 2rem;
+  width: 4rem;
+  border: none;
+  border-radius: 12px;
+  background-color: rgb(100, 182, 127);
+  font-size: 1.3rem;
+}
+
+/* MAIN */
+.container {
+  width: 100%;
+}
+
+main {
+  width: 75%;
+  margin: auto;
+}
+
+.dessert_dish {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.dessert_dish div {
+  width: 20%;
+  margin: 2rem;
+  padding-bottom: 1rem;
+}
+
+.dessert_dish img {
+  max-width: 100%;
+  height: 400px;
+  object-fit: cover;
+  
+}
+
+.dessert_dish h2,
+span {
+  font-size: 1.5rem;
+  display: table;
+  margin: 0 auto; 
+  
+}
+
+.dessert_dish1:hover img,
+.dessert_dish2:hover img,
+.dessert_dish3:hover img,
+.dessert_dish4:hover img,
+.dessert_dish5:hover img,
+.dessert_dish6:hover img,
+.dessert_dish7:hover img {
+  transform-origin: bottom right;
+  animation: scale 1000ms ease-in-out reverse;
+
+}
+
+@keyframes scale {
+  to {
+    transform: scale(1.5);
+  }
+}
+
+
+footer {
+  position: relative;
+  padding-top: 20rem;
+}
+
+
+/*---------------------------Tablet--------------------------*/
+@media (max-width: 1007px) {
+
+  /* Language Button */
+  .langBtn {
+    position: absolute;
+    top: 1.5rem;
+    right: 3rem;
+  }
+
+  .langBtn img {
+    width: 18px;
+    height: 16px;
+    padding-right: 5px;
+  }
+
+  .langBtn a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .btn {
+    height: 2rem;
+    width: 4rem;
+    border: none;
+    border-radius: 12px;
+    background-color: rgb(100, 182, 127);
+    font-size: 1.3rem;
+  }
+
+  /* MAIN */
+  /*.container {
+    height: 120vh;
+  }*/
+
+  main {
+    /*width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;*/
+    width: 100%;
+    height: fit-content;
+  }
+
+  .dessert_dish div {
+    width: 20%;
+    /*width: 15%;*/
+    padding: 0;
+    margin: 1rem;
+  }
+
+  .dessert_dish img {
+    width: 100%;
+    /*height: 100px;*/
+    height: 200px;
+    object-fit: cover;
+  }
+
+  footer {
+    height: 2rem;
+     text-align: center;
+     color: rgb(227, 238, 242);
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-size: x-small;
+    /*position: relative;
+    margin: 0;
+    padding-top: 1rem;*/
+  }
+}
+
+/*---------------------------Mobile--------------------------*/
+@media (max-width: 640px) {
+
+  /* LANGUAGE BUTTON */
+  .btn {
+    height: 1.5rem;
+    width: 2.5rem;
+    border: none;
+    border-radius: 12px;
+    background-color: white;
+    font-size: 0.8rem;
+  }
+
+  .langBtn {
+    position: absolute;
+    top: 2.4rem;
+    right: 0rem;
+  }
+
+  .langBtn a {
+    text-decoration: none;
+    color: green;
+  }
+
+  .langBtn img {
+    width: 14px;
+    height: 12px;
+    padding: 0;
+  }
+
+  /* header */
+  header{
+    background-color:rgb(105, 44, 44);
+    height: 5rem;}
+
+  /* MAIN */
+  main {
+    /*height: 270vh;
+    width: 100%;
+    background: white;
+    height: 300vh;
+    overflow: scroll;*/
+    height: fit-content;
+    /* height: 270vh; */
+    width: 100%;
+    background: white;
+  }
+
+  .dessert_dish {
+    display: block;
+  }
+
+  .dessert_dish div {
+    width: 100%;
+    margin-left: 0;
+    padding-top: 1rem;
+  }
+
+  .dessert_dish:hover img {
+    animation: none;
+  }
+
+  .dessert_dish img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  main{
+    
+ 
+    padding-top: 1px;
+    height:auto;
+    padding-bottom: 40px;
+    /* padding-left: 40px; */
+    /* padding-right: 20px; */
+ 
+   }
+
+  footer {
+    position: relative;
+    margin: 0;
+    padding-top: 1rem;
+  }
+}

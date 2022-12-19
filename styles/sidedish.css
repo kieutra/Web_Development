@@ -1,0 +1,205 @@
+
+*{
+  font-family: sans-serif;
+}
+/* Language Button */
+.langBtn{
+  position: absolute;
+  top: 3rem;
+  right: 5rem;
+}
+.langBtn img{
+  width: 18px;
+  height: 16px;
+  padding-right: 5px;
+}
+.langBtn a{
+  text-decoration: none;
+  color: white;
+}
+.btn{
+  height: 2rem;
+  width: 4rem;
+  border: none;
+  border-radius: 12px;
+  background-color: rgb(100, 182, 127);
+  font-size: 1.3rem;
+}
+
+/* MAIN */
+.container{
+  width: 100%;
+}
+main{
+  width: 75%;
+  margin: auto;
+}
+.side_dish{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.side_dish div{
+  width: 20%;
+  margin: 2rem;
+  padding-bottom: 1rem;
+}
+.side_dish img{
+  max-width: 100%;
+  height: 400px;
+  object-fit:cover;
+}
+
+.side_dish h2, span{
+  font-size: 1.5rem;
+  display: table;
+  margin: 0 auto;
+}
+
+.side_dish1:hover img, .side_dish2:hover img,.side_dish3:hover img,
+.side_dish4:hover img, .side_dish5:hover img , .side_dish6:hover img
+, .side_dish7:hover img{
+  transform-origin:  bottom right;
+  animation: scale 1000ms ease-in-out reverse;
+}
+@keyframes scale {
+  to {
+    transform: scale(1.2);    
+  }
+}
+
+/* 
+.side_dish1:active img {
+  position: absolute;
+  top: 50%; right: 50%;
+  transform: translate(50%,-50%);
+  height: 100vh;
+  width: 50vw;
+  content: url("image/sidedish_crispyFalafel_description.jpg");
+  opacity: 1;
+} */
+
+footer{
+  position: relative;
+  padding-top: 20rem;
+}
+
+
+/*---------------------------Tablet iPad Mini and iPad air--------------------------*/
+@media (max-width: 1007px) {
+
+  /* Language Button */
+.langBtn{
+  position: absolute;
+  top: 1.5rem;
+  right: 3rem;
+}
+.langBtn img{
+  width: 18px;
+  height: 16px;
+  padding-right: 5px;
+}
+.langBtn a{
+  text-decoration: none;
+  color: white;
+}
+.btn{
+  height: 2rem;
+  width: 4rem;
+  border: none;
+  border-radius: 12px;
+  background-color: rgb(100, 182, 127);
+  font-size: 1.3rem;
+}
+
+/* MAIN */
+/* .container{
+  height: 100vh;
+} */
+  main{
+    width: 100%;
+    /* height: 55vh; */
+    margin: 0;
+    padding: 0;
+  }
+  .side_dish div{
+    width: 15%;
+    padding: 0;
+    margin: 1rem;
+  }
+  .side_dish img{
+    width: 100%;
+    height: 100px;
+    object-fit:cover;
+  }
+  .side_dish h2{
+    font-size: 1rem;
+  }
+
+  footer{
+    position: relative;
+    margin: 0;
+    padding: 1rem;
+  }
+}
+
+  /*---------------------------Mobile iphone pro--------------------------*/
+@media (max-width: 640px) {
+  /* LANGUAGE BUTTON */
+  .btn{
+    height: 1.5rem;
+    width: 2.5rem;
+    border: none;
+    border-radius: 12px;
+    background-color: white;
+    font-size: 0.8rem;
+  }
+  .langBtn{
+    position: absolute;
+    top: 2.4rem;
+    right: 0rem;
+  }
+  .langBtn a{
+    text-decoration: none;
+    color: green;
+  }
+  .langBtn img{
+    width: 14px;
+    height: 12px;
+    padding: 0;
+  }
+
+  /* MAIN */
+  .container{
+    padding-right: 0;
+    height: 300vh;
+    overflow:scroll;
+  }
+  main{
+    /* height: 275vh; */
+    width: 100%;
+    background: white;
+  }
+  .side_dish{
+    display: block;
+  }
+  .side_dish div{
+    width: 100%;
+    margin-left: 0;
+    padding-top: 1rem;
+  }
+  .side_dish:hover img{
+    animation: none;
+  }
+  .side_dish img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  footer{
+    position: relative;
+    padding: 1rem;
+    height: 2rem;
+  }
+}

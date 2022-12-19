@@ -1,0 +1,188 @@
+/*----------------------- Sales Page -----------------------*/
+
+/* styling the main class selector */
+.main {
+  width: 75%;
+  margin: auto;     /*center div box*/
+  font-family: verdana, Ariel, Helvetica, sans-serif;
+  font-size: 1rem;
+  padding-bottom: 2%;
+  /*height: 100vw;  Stretch Main Box */
+}
+
+.main p, h2 {
+    padding: 2%;
+    color: rgba(32, 59, 68, 255);
+}
+
+.main h2 {
+    font-size: 1.2em;
+    font-weight:bold;
+}
+
+.main p{
+    font-size: 95%;
+}
+
+.maintext{
+    display: none;
+}
+
+
+/* Sales text in main (Mobile)*/
+@media (max-width: 640px) {
+    .maintext{
+        display:block;
+    }
+}
+
+/* Sales Table*/  
+table {
+    border: 1px solid rgba(32,59,68,255);
+    border-collapse: collapse;
+    margin: auto;
+    /* padding: 0; */
+    width: 75%;
+    table-layout: auto;
+	  padding-bottom: 2%;
+
+}
+
+table a {
+    text-decoration: none;
+    color: #1E3903;
+}
+
+table caption {
+    font-size: 1.1em;
+    margin: 1.4em .5em 0.5em .75em;
+    font-weight:bold;
+	color: #1E3903;
+}
+  
+table tr {
+    border: 1px solid #1E3903;
+    padding: .35em;
+	text-align: center
+}
+  
+table th,
+table td {
+    border: 1px solid #1E3903;
+    padding: .7em .0em .7em .7em;
+    text-align: left;
+    font-size: small;
+}
+
+table th {
+    background-color: #166643;
+    color: #ffffff;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.tableColor{
+	background-color: #1A4314;
+    color: #ffffff;
+}
+.merged{
+	color: #FFE900;
+}
+/* Sales Mobile*/  
+  @media screen and (max-width: 640px) {
+    table {
+      border: none;
+	  padding-bottom: 2%;
+	  background-color: #C8E8A9;
+    }
+    
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      display: block;
+      margin-bottom: .5em;
+    }
+    
+    table td {
+      border: none;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    
+    table td::before {
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-align: left;
+    }
+    
+
+    table caption {
+        margin-left: 0;
+        text-align: left;
+    }
+	
+ }
+
+/* Sales Tablet*/  
+
+@media (max-width: 1007px) {
+    footer {
+        position: fixed !important;
+		bottom:0 !important;
+		left: 0 !important;
+    }
+	
+	
+	table {
+      border: none;
+	  background-color: #B2D2A4;
+    }
+	
+	body{
+		padding-bottom: 12%;
+		background: #BAB099 !important;
+	}
+  }
+
+
+ /*Seo Accordian*/
+     .accordiancontain{
+      width:75%;
+      margin: auto;
+      padding: 2% 0% 2% 0%;
+      color: white;
+    }
+    .accordion {
+      background-color: rgb(121, 155, 111);
+      color: white;
+      transition: 0.4s;
+      cursor: pointer;
+      padding: 1%;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+
+    }
+    
+    .active, .accordion:hover {
+      background-color: rgb(76, 106, 67);
+    }
+    
+    .seoText {
+      padding: 0 1%;
+      display: none;
+      background-color: rgb(138, 123, 112);
+      overflow: hidden;
+    }

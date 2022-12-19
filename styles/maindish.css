@@ -1,0 +1,243 @@
+/* Language Button */
+.langBtn {
+  position: absolute;
+  top: 3rem;
+  right: 5rem;
+}
+
+
+.langBtn img {
+  width: 18px;
+  height: 16px;
+  padding-right: 5px;
+}
+
+.langBtn a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  height: 2rem;
+  width: 4rem;
+  border: none;
+  border-radius: 12px;
+  background-color: rgb(100, 182, 127);
+  font-size: 1.3rem;
+}
+
+/* MAIN */
+.container {
+  width: 100%;
+}
+
+main {
+  width: 75%;
+  margin: auto;
+}
+
+.main_dish {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.main_dish div {
+  width: 20%;
+  margin: 2rem;
+  padding-bottom: 1rem;
+}
+
+.main_dish img {
+  max-width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.main_dish h2,
+span {
+  font-size: 1.5rem;
+  display: table;
+  margin: 0 auto;
+}
+
+.main_dish1:hover img,
+.main_dish2:hover img,
+.main_dish3:hover img,
+.main_dish4:hover img,
+.main_dish5:hover img,
+.main_dish6:hover img,
+.main_dish7:hover img {
+  transform-origin: left top;
+  animation: scale 1000ms ease-in-out forwards;
+}
+
+@keyframes scale {
+  to {
+    transform: scale(1.5);
+  }
+}
+
+/* 
+  .side_dish1:active img {
+    position: absolute;
+    top: 50%; right: 50%;
+    transform: translate(50%,-50%);
+    height: 100vh;
+    width: 50vw;
+    content: url("image/sidedish_crispyFalafel_description.jpg");
+    opacity: 1;
+  } */
+
+footer {
+  position: relative;
+  padding-top: rem;
+}
+
+
+/*---------------------------Tablet--------------------------*/
+@media (max-width: 1007px) {
+
+  /* Language Button */
+  .langBtn {
+    position: absolute;
+    top: 1.5rem;
+    right: 3rem;
+  }
+
+  .langBtn img {
+    width: 18px;
+    height: 16px;
+    padding-right: 5px;
+  }
+
+  .langBtn a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .btn {
+    height: 2rem;
+    width: 4rem;
+    border: none;
+    border-radius: 12px;
+    background-color: rgb(100, 182, 127);
+    font-size: 1.3rem;
+  }
+
+  /* MAIN */
+  /* .container {
+    height: 120vh;
+  } */
+
+  main {
+    
+    width: 100%;
+    height: fit-content;
+  }
+
+  .main_dish div {
+    width: 20%;
+    padding: 0;
+    margin: 1rem;
+  }
+
+  .main_dish img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  /* footer {
+    position: relative;
+    padding-top: 1rem;
+  } */
+  footer{
+    height: 2rem;
+     text-align: center;
+     color: rgb(227, 238, 242);
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-size: x-small;
+   }
+}
+
+/*---------------------------Mobile--------------------------*/
+@media (max-width: 640px) {
+
+  /* LANGUAGE BUTTON */
+  .btn {
+    height: 1.5rem;
+    width: 2.5rem;
+    border: none;
+    border-radius: 12px;
+    background-color: white;
+    font-size: 0.8rem;
+  }
+
+  .langBtn {
+    position: absolute;
+    top: 2.4rem;
+    right: 0rem;
+  }
+
+  .langBtn a {
+    text-decoration: none;
+    color: green;
+  }
+
+  .langBtn img {
+    width: 14px;
+    height: 12px;
+    padding: 0;
+  }
+  /* header */
+  header{
+    background-color:rgb(105, 44, 44);
+    height: 5rem;}
+
+  /* MAIN */
+  main {
+    height: fit-content;
+    /* height: 270vh; */
+    width: 100%;
+    background: white;
+  }
+
+  .main_dish {
+    display: block;
+  }
+
+  .main_dish div {
+    width: 100%;
+    margin-left: 0;
+    padding-top: 1rem;
+  }
+
+  .main_dish:hover img {
+    animation: none;
+  }
+
+  .main_dish img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  main{
+    
+ 
+    padding-top: 1px;
+    height:auto;
+    padding-bottom: 40px;
+    /* padding-left: 40px; */
+    /* padding-right: 20px; */
+ 
+   }
+   footer{
+    height: 1rem;
+    margin-top: 1rem;
+     text-align: center;
+
+     font-size: x-small;
+   }
+  }

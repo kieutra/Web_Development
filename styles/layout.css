@@ -1,0 +1,230 @@
+@charset "utf-8";
+
+/* reset the layout */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Language Button */
+.langBtn{
+    position: absolute;
+    top: 3rem;
+    right: 5rem;
+  }
+  .langBtn img{
+    width: 18px;
+    height: 16px;
+    padding-right: 5px;
+  }
+  .langBtn a{
+    text-decoration: none;
+    color: white;
+  }
+  .btn{
+    height: 2rem;
+    width: 4rem;
+    border: none;
+    border-radius: 12px;
+    background-color: rgb(100, 182, 127);
+    font-size: 1.3rem;
+  }
+  
+/* styling the body */
+body {
+    font-size: 1rem;
+	background: linear-gradient(180deg, rgba(224, 235, 239, 255) 1%, rgba(69, 120, 0, 255) 98%);
+	background-attachment: fixed;
+}
+
+/* styling the header */
+header {
+    color: rgba(65, 117, 0, 255);
+    text-align: center;
+    padding: 1%;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+header h1 {
+    text-shadow: 4px 3px 8px rgba(37, 37, 37, 0.66);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header h4 {
+    font-style: italic;
+    font-family: verdana, Ariel, Helvetica, sans-serif;
+    font-size: 60%;
+}
+
+/* styling the nav */
+
+nav ul {
+    /* nav { */
+    width: 75%;
+    margin: auto;
+    height: 2.5rem;
+    background-color: rgb(100, 182, 127);
+    display: flex;
+   justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+
+    font-weight: bold;
+    font-family: verdana, Ariel, Helvetica, sans-serif;
+}
+
+/* styling the footer selector */
+footer {
+    color: rgba(227, 238, 242, 255);
+    font-size: small;
+    padding: 1% 0% 1% 0%;
+    text-align: center;
+    /*Footer always goes after content*/
+	   position: fixed;   
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+footer a{
+  color: white;
+  text-decoration: none;
+}
+
+/*---------------------------Responsive Design------------------------------------------------
+Screen Size Ref: https://www.browserstack.com/guide/ideal-screen-sizes-for-responsive-design 
+Screen Size Ref2: phones (576px), tablets (768px), https://kinsta.com/blog/responsive-web-design/ */
+/*---------------------------Tablet--------------------------*/
+@media (max-width: 1007px) {
+    html {
+        height: auto;
+        background-color:rgba(69, 120, 0, 255);
+    }
+
+      /* Language Button */
+.langBtn{
+    position: absolute;
+    top: 1.5rem;
+    right: 3rem;
+  }
+  .langBtn img{
+    width: 18px;
+    height: 16px;
+    padding-right: 5px;
+  }
+  .langBtn a{
+    text-decoration: none;
+    color: white;
+  }
+  .btn{
+    height: 2rem;
+    width: 4rem;
+    border: none;
+    border-radius: 12px;
+    background-color: rgb(100, 182, 127);
+    font-size: 1.3rem;
+  }
+
+    /*********Tablet Header********/
+
+    header {
+        background-color: rgba(69, 120, 0, 255);
+        color: rgba(227, 238, 242, 255);
+    }
+
+    /*********Tablet Main********/
+
+    
+    .main {
+        width: 100%;
+    }
+
+    /*********Tablet Nav********/
+
+    nav ul {
+        width: 100%;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding-left: 0.8rem;
+        font-weight: bold;
+        font-family: verdana, Ariel, Helvetica, sans-serif;
+    }
+
+    /*********Tablet Footer********/
+
+    footer {
+        height: 8%;
+        font-size: small;
+        line-height: 1.7em;
+        background-color: rgba(69, 120, 0, 255);
+        position: relative;
+    }
+}
+
+
+/*---------------------------Mobile--------------------------*/
+@media (max-width: 640px) {
+
+    /*********Mobile Main********/
+  /* LANGUAGE BUTTON */
+  .btn{
+    height: 1.5rem;
+    width: 2.5rem;
+    border: none;
+    border-radius: 12px;
+    background-color: white;
+    font-size: 0.8rem;
+  }
+  .langBtn{
+    position: absolute;
+    top: 2.4rem;
+    right: 0rem;
+  }
+  .langBtn a{
+    text-decoration: none;
+    color: green;
+  }
+  .langBtn img{
+    width: 14px;
+    height: 12px;
+    padding: 0;
+  }
+  header{
+    background-color:rgb(105, 44, 44);
+    height: 5rem;}
+  
+    /*********Mobile Nav********/
+    nav ul {
+        height: 100%;
+        display: grid;
+        background-color: white;
+    }
+
+    nav ul div {
+        display: flex;
+        
+        align-items: center;         /*center vertical*/
+        justify-content: center;         /*center horizontal*/
+        background-color: rgba(69, 120, 0, 255);
+        margin: 1px 0px 1px 0px;
+        /* outline: solid white 0.8px; */
+        /*menu line*/
+        width: 100vw;
+        height: 2.8em;
+    }
+
+    /*********Mobile Footer********/
+
+    footer {
+        height: 8%;
+        font-size: small;
+        line-height: 1.7em;
+    }
+}

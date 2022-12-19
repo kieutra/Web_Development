@@ -1,0 +1,343 @@
+<!-- Tan (Chananporn) Wanichprasertporn , Student ID: 261080876;
+Thi Thanh Tra KIEU, 261066512;
+Wesal Shaaban, 261067878;
+Suzanne Gibson, 261071259;
+PeiDi Yang, 261064524. -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delivery</title>
+  <meta name="description" content="variety of dishes from many cultures">
+  <meta name="keyword" content="main dishes, side dishes, desserts, salad, kimchi, wakame, taco, cucumber, papaya, mango">
+
+<link rel="stylesheet" href="styles/layout.css">
+<link rel="stylesheet" href="styles/delivery.css">
+
+</head>
+<body>
+  <div class="langBtn"> 
+    <button class="btn langFr">
+      <a href="delivery_fr.html">
+        <img src="image/french.jpg" alt="french flag">FR
+      </a>
+    </button>
+  </div>
+
+  <div class="container">
+    <header>
+      <h1>Vegetarian Paradise</h1>
+      <h4>Eating is great! &#128523</h4>
+    </header>
+    <nav>
+      <ul>
+          <li><div id="home"><a href="index.html">Home</a></div></li>
+          <li><div id="menu"><a href="menu.html">Menu</a></div></li>
+          <li><div id="mainDish"><a href="maindishes.html">Main Dishes</a></div></li>
+          <li><div id="sideDish"><a href="sidedish.html">Side Dish</a></div></li>
+          <li><div id="dessert"><a href="dessert.html">Desserts</a></div></li>
+          <li><div id="sales"><a href="sales.html">Sales-off</a></div></li>
+          <li><div id="delivery"><a href="delivery.html">Delivery</a></div></li>
+      </ul>
+  </nav>
+
+    <main> 
+         <h2>Choose the dishes for your menu</h3>
+        <div class="deliveryForm">
+          <form action="payment.html" method="post" onsubmit="next();" onreset="location.reload()">
+          <div class="menu_order">
+             <!-- MAIN DISH  -->
+             <div class="maindish_delivery">
+              <table>
+               <tr>
+                 <td>
+                   <h3>Main Dishes</h3>
+                 </td>
+                 <td>
+                   <h3>Quantity</h3>
+                 </td>
+               </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" class="dish" id="menu_maindish1" value="16" onclick="isChecked()">
+                    <label for="menu_maindish1">Mediterranean Koshari</label>           
+                  </td>
+                  <td>
+                   <input type="number" class="quantity" id="quantityMD1" name="quantityMD" min="0" max="50" onchange="isChecked()">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" class="dish" id="menu_maindish2" value="19.95" onclick="isChecked()">
+                    <label for="menu_maindish2">Polenta Vegetables Grits Pizza</label>            
+                  </td>
+                  <td>
+                   <input type="number" class="quantity" id="quantityMD2" name="quantityMD" min="0" max="50" onchange="isChecked()">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" class="dish" id="menu_maindish3" value="18.95" onclick="isChecked()">
+                    <label for="menu_maindish3">Vegeterian Lasagna</label>   
+                  </td>
+                  <td>
+                   <input type="number" class="quantity" id="quantityMD3" name="quantityMD" min="0" max="50" onchange="isChecked()">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" class="dish" id="menu_maindish4" value="18.5" onclick="isChecked()">
+                    <label for="menu_maindish4">Vegetable Beans Stew</label>               
+                  </td>
+                  <td>
+                   <input type="number" class="quantity" id="quantityMD4" name="quantityMD" min="0" max="50" onchange="isChecked()">
+                  </td>
+                </tr>    
+                <tr>
+                 <td>
+                   <input type="checkbox" class="dish" id="menu_maindish5" value="13.95" onclick="isChecked()">
+                   <label for="menu_maindish5">Roasted Corn Tacos</label>   
+                 </td>
+                 <td>
+                   <input type="number" class="quantity" id="quantityMD5" name="quantityMD" min="0" max="50" onchange="isChecked()">
+                  </td>
+               </tr>
+               <tr>
+                 <td>
+                   <input type="checkbox" class="dish" id="menu_maindish6" value="15.5" onclick="isChecked()">
+                   <label for="menu_maindish6">Veggie burger</label>               
+                 </td>
+                 <td>
+                   <input type="number" class="quantity" id="quantityMD6" name="quantityMD" min="0" max="50" onchange="isChecked()">
+                  </td>
+               </tr>    
+               <tr>
+                 <td>
+                   <input type="checkbox" class="dish" id="menu_maindish7" value="19.95" onclick="isChecked()">
+                   <label for="menu_maindish7">Sesame Tofu with Chickpeas & Spice</label>               
+                 </td>
+                 <td>
+                   <input type="number" class="quantity" id="quantityMD7" name="quantityMD" min="0" max="50" onchange="isChecked()">
+                  </td>
+               </tr>   
+               <tr>
+                 <td>
+                   <input type="checkbox" class="dish" id="menu_maindish8" value="19.95" onclick="isChecked()">
+                   <label for="menu_maindish8">Indian Bisi Bele Bath</label>               
+                 </td>
+                 <td>
+                   <input type="number" class="quantity" id="quantityMD8" name="quantityMD" min="0" max="50" onchange="isChecked()">
+                  </td>
+               </tr>            
+             </table>
+           </div>
+           <!-- SIDE DISH  -->
+           <div class="sidedish_delivery">
+            <table>
+             <tr>
+               <td>
+                 <h3>Side Dishes</h3>
+               </td>
+               <td>
+                 <h3>Quantity</h3>
+               </td>
+             </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="dish" id="menu_sidedish1" value="10.5"  onclick="isChecked()">
+                  <label for="menu_sidedish1">Crispy Falafel</label>           
+                </td>
+                <td>
+                 <input type="number" class="quantity" id="quantity1"   min="0" max="50" onchange="isChecked()">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="dish" id="menu_sidedish2" value="9.5" onclick="isChecked()">
+                  <label for="menu_sidedish2">Korean Style Cucumber</label>            
+                </td>
+                <td>
+                 <input type="number" class="quantity" id="quantity2"    min="0" max="50" onchange="isChecked()">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="dish" id="menu_sidedish3" value="10.0" onclick="isChecked()">
+                  <label for="menu_sidedish3">Korean Style Kimchi</label>   
+                </td>
+                <td>
+                 <input type="number" class="quantity" id="quantity3"    min="0" max="50" onchange="isChecked()">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="dish" id="menu_sidedish4" value="9.5" onclick="isChecked()">
+                  <label for="menu_sidedish4">Japanese Style Wakame</label>               
+                </td>
+                <td>
+                 <input type="number" class="quantity" id="quantity4"   min="0" max="50" onchange="isChecked()">
+                </td>
+              </tr>    
+              <tr>
+               <td>
+                 <input type="checkbox" class="dish" id="menu_sidedish5" value="11" onclick="isChecked()">
+                 <label for="menu_sidedish5">Thai Style Mango</label>   
+               </td>
+               <td>
+                 <input type="number" class="quantity" id="quantity5"   min="0" max="50" onchange="isChecked()">
+                </td>
+             </tr>
+             <tr>
+               <td>
+                 <input type="checkbox" class="dish" id="menu_sidedish6" value="11.5" onclick="isChecked()">
+                 <label for="menu_sidedish6">Mexican Style Taco</label>               
+               </td>
+               <td>
+                 <input type="number" class="quantity" id="quantity6"   min="0" max="50" onchange="isChecked()">
+                </td>
+             </tr>    
+             <tr>
+               <td>
+                 <input type="checkbox" class="dish" id="menu_sidedish7" value="10" onclick="isChecked()">
+                 <label for="menu_sidedish7">Vietnamese Style Papaya</label>               
+               </td>
+               <td>
+                 <input type="number" class="quantity" id="quantity7"   min="0" max="50" onchange="isChecked()">
+                </td>
+             </tr>              
+           </table>
+         </div>
+
+           <!-- DESSERTS  -->
+           <div class="dessert_delivery">
+            <table>
+             <tr>
+               <td>
+                 <h3>Desserts</h3>
+               </td>
+               <td>
+                 <h3>Quantity</h3>
+               </td>
+             </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="dish" id="menu_dessert1" value="11.95" onclick="isChecked()">
+                  <label for="menu_dessert1">Keylime Cheese Cake</label>           
+                </td>
+                <td>
+                 <input type="number" class="quantity" id="quantityDessert1" name="quantityDessert" min="0" max="50" onchange="isChecked()">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="dish" id="menu_dessert2" value="10.95" onclick="isChecked()">
+                  <label for="menu_dessert2">Vegan Carrot Cake</label>            
+                </td>
+                <td>
+                 <input type="number" class="quantity" id="quantityDessert2" name="quantityDessert" min="0" max="50" onchange="isChecked()">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="dish" id="menu_dessert3" value="8.5" onclick="isChecked()">
+                  <label for="menu_dessert3">Tofu Chocolate Cake</label>   
+                </td>
+                <td>
+                 <input type="number" class="quantity" id="quantityDessert3" name="quantityDessert" min="0" max="50" onchange="isChecked()">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="dish" id="menu_dessert4" value="9.5" onclick="isChecked()">
+                  <label for="menu_dessert4">Lemon Meringue Pie</label>               
+                </td>
+                <td>
+                 <input type="number" class="quantity" id="quantityDessert4" name="quantityDessert" min="0" max="50" onchange="isChecked()">
+                </td>
+              </tr>    
+              <tr>
+               <td>
+                 <input type="checkbox" class="dish" id="menu_dessert5" value="7.95" onclick="isChecked()">
+                 <label for="menu_dessert5">Chocolate Brownies</label>   
+               </td>
+               <td>
+                 <input type="number"  class="quantity" id="quantityDessert5" name="quantityDessert" min="0" max="50" onchange="isChecked()">
+                </td>
+             </tr>
+             <tr>
+               <td>
+                 <input type="checkbox" class="dish" id="menu_dessert6" value="5.5" onclick="isChecked()">
+                 <label for="menu_dessert6">Chocolate Cups</label>               
+               </td>
+               <td>
+                 <input type="number" class="quantity" id="quantityDessert6" name="quantityDessert" min="0" max="50" onchange="isChecked()">
+                </td>
+             </tr>    
+             <tr>
+               <td>
+                 <input type="checkbox" class="dish" id="menu_dessert7" value="12.95" onclick="isChecked()">
+                 <label for="menu_sidedish7">Heavenly Pancakes</label>               
+               </td>
+               <td>
+                 <input type="number" class="quantity" id="quantityDessert7" name="quantityDessert" min="0" max="50" onchange="isChecked()">
+                </td>
+             </tr>   
+             <tr>
+              <td>
+                <input type="checkbox" class="dish" id="menu_dessert8" value="6.95" onclick="isChecked()">
+                <label for="menu_sidedish8">Chocolate Pudding Pie</label>               
+              </td>
+              <td>
+                <input type="number" class="quantity" id="quantityDessert8" name="quantityDessert" min="0" max="50" onchange="isChecked()">
+               </td>
+            </tr>            
+           </table>
+         </div> 
+        </div>   
+   
+        <!-- CALCULATE -->
+        <div class="button" >                
+          <button type="button" id="calculate" >Calculate</button> 
+          <button type="reset" id="clearAll">Clear All</button>  
+        </div>
+        <!-- TOTAL FORM -->                
+        <div class="totalForm">
+          <div>
+            <h3>Sub total </h3>
+            <p id="subtotal">$ 0.0</p>   
+          </div>
+          <div>
+            <h3>Tax</h3>
+            <p id="tax">15%</p>
+          </div>
+          <div>
+            <h3>Delivery fee (<i><small>0 if order >=$60</small></i>)</h3>
+            <p id="deliveryFee">10$</p>
+          </div>
+          <div>
+            <h3>Total</h3>
+            <p id="total">$ 0.0</p>
+          </div>
+        </div>
+
+        <!-- <form action="payment.html"> -->
+          <div class="button">                
+            <button disabled type="submit" id="next">Next</button>      
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy Copyright 2022. All Rights Reserved.</p>
+
+      <p><a href="mailto:thi.kieu@mail.mcgill.ca">Contact us by email</a></p>  
+    </footer>
+  </div>
+  <script src="javascript/sales.js" async></script>
+  <script src="javascript/delivery.js" async></script>
+</body>
+
+</html>
