@@ -1,10 +1,6 @@
-<!-- Tan (Chananporn) Wanichprasertporn , Student ID: 261080876;
-Thi Thanh Tra KIEU, 261066512;
-Wesal Shaaban, 261067878;
-Suzanne Gibson, 261071259;
-PeiDi Yang, 261064524. -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,12 +9,13 @@ PeiDi Yang, 261064524. -->
   <link rel="stylesheet" href="styles/layout.css">
   <link rel="stylesheet" href="styles/payment.css">
 </head>
+
 <body>
 
-  <div class="langBtn"> 
-    <button class="btn langFr">
+  <div class="langBtn">
+    <button class="btn langEn">
       <a href="payment_fr.html">
-        <img src="image/french.jpg" alt="french flag">FR
+        <img src="image/English.png" alt="english flag">EN
       </a>
     </button>
   </div>
@@ -30,141 +27,161 @@ PeiDi Yang, 261064524. -->
 
   <nav>
     <ul>
-        <li><div id="home"><a href="index.html">Home</a></div></li>
-        <li><div id="menu"><a href="menu.html">Menu</a></div></li>
-        <li><div id="mainDish"><a href="maindishes.html">Main Dishes</a></div></li>
-        <li><div id="sideDish"><a href="sidedish.html">Side Dish</a></div></li>
-        <li><div id="dessert"><a href="dessert.html">Desserts</a></div></li>
-        <li><div id="sales"><a href="sales.html">Sales-off</a></div></li>
-        <li><div id="delivery"><a href="delivery.html">Delivery</a></div></li>
+      <li>
+        <div id="home"><a href="index.html">Home</a></div>
+      </li>
+      <li>
+        <div id="menu"><a href="menu.html">Menu</a></div>
+      </li>
+      <li>
+        <div id="mainDish"><a href="maindishes.html">Main Dishes</a></div>
+      </li>
+      <li>
+        <div id="sideDish"><a href="sidedish.html">Side Dish</a></div>
+      </li>
+      <li>
+        <div id="dessert"><a href="dessert.html">Desserts</a></div>
+      </li>
+      <li>
+        <div id="sales"><a href="sales.html">Sales-off</a></div>
+      </li>
+      <li>
+        <div id="delivery"><a href="delivery.html">Delivery</a></div>
+      </li>
     </ul>
   </nav>
   <main>
-    <h2>Complete the form below to finish your online order.</h2>                 
-        <form class="delivery" action="payment_success.html" method="post">  
-              
-          <fieldset>
-            <legend>Order Form</legend>
-            <table>
-                <tr>
-                <td>
-                  <label for="date">Please choose time for delivery</label>          
-                </td>
-              </tr>
-              <tr> 
-                <td>
-                    <input type="date" name="date" id="date" required > 
-                    <select name="time_delivery" id="time_delivery" required>
-                      <option value="">Hours</option>
-                      <option value="11h_13h">11h - 13h</option>
-                      <option value="13h_15h">13h - 15h</option>
-                      <option value="15h_17h">15h - 17h</option>
-                      <option value="17h_19h">17h - 19h</option>
-                      <option value="19h_21h">19h - 21h</option>
-                    </select>    
-                </td>
-              </tr>
+    <h2>Complete the form below to finish your online order.</h2>
+    <form class="delivery" action="payment_success.html" method="post">
 
-              <tr>
-                <td>
-                    <label for="comment">Comments?</label>
-                </td>             
-            </tr>     
-            <tr>
-              <td>
-                <textarea id="comment" rows="6" cols="45"></textarea>
-              </td>
-            </tr>         
-              </table>
-          </fieldset>        
-          </aside>                              
- 
-          <fieldset>
-            <legend class="info">Your Information</legend>          
-            <table>            
-              <tr>
-                <td>
-                  <label for="full_name" >Full Name</label> 
-                  <input type="text" id="full_name" name="full_name" size="30" maxlength="50" required>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <label for="address"></label>
-                </td>
-              </tr>
-              <tr>
-                  <td>
-                    <label for="address">Street</label>
-                    <input type="text" id="address" name="address" size="30" maxlength="100" required placeholder="123 rue ABC">
-                  </td>
-                  <td>
-                    <label for="city" class="cityLb">City</label>
-                    <input type="text" id="city" name="city" size="5" maxlength="20" required>
-                  </td>
-                  <td>
-                    <label for="zip" class="zipLb">Postal Code</label>
-                    <input type="text" id="zip" name="zip" size="5" maxlength="10" required placeholder="H1N 3B9" pattern="[ABCEGHJ-NPRSTVXY][0-9][ABCEGHJ-NPRSTV-Z] [0-9][ABCEGHJ-NPRSTV-Z][0-9]">
-                  </td>
-              </tr>
-              <tr>
-                <td>
-                  <label for="phone">Telephone</label> 
-                  <input type="tel" id="phone" name ="phone" size="30" maxlength="10" placeholder ="5149154321"  required pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <label for="email">Email (optional)</label> 
-                  <input type="email" id="email" name="email" size="30" maxlength="20" placeholder ="email@host.com"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Invalid email address! For example email@host.com">
-                </td>
-              </tr>
-            </table>
-          </fieldset>
-        </aside>
-                        
-          <fieldset>
-            <legend>Payment</legend>
-            <table>
-              <tr>
-                <td>
-                <label for="card">Cards</label>  
-                <input type="radio" id="debit" name="card" required>
-                <label for="debit">Debit</label>
-                <input type="radio" id="credit" name="card">
-                <label for="credit">Credit</label>
-                </td>        
-              </tr>
-            <tr>
-              <td>
-                <label for="cname">Name on Card</label> 
-                <input type="text" id="cname" name="cardname" size= "40" maxlength="50" required>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <label for="cnum">Card Number</label> 
-                <input type="text" id="cnum" name="cardnumber" size= "40" maxlength="20" placeholder="1111 2222 3333 4444" required pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}$">
-              </td>
-            </tr>
-     
-            <tr>
-              <td>
-                <label for="expDate">Expired Date</label> 
-                <select name='expireMM' id='expireMM' required>
-                  <option value=''>Month</option>
-                  <option value='01'>January</option>
-                  <option value='02'>February</option>
-                  <option value='03'>March</option>
-                  <option value='04'>April</option>
-                  <option value='05'>May</option>
-                  <option value='06'>June</option>
-                  <option value='07'>July</option>
-                  <option value='08'>August</option>
-                  <option value='09'>September</option>
-                  <option value='10'>October</option>
-                  <option value='11'>November</option>
-                  <option value='12'>December</option>
+      <fieldset>
+        <legend>Order Form</legend>
+        <table>
+          <tr>
+            <td>
+              <label for="date">Please choose time for delivery</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="date" name="date" id="date" required>
+              <select name="time_delivery" id="time_delivery" required>
+                <option value="">Hours</option>
+                <option value="11h_13h">11h - 13h</option>
+                <option value="13h_15h">13h - 15h</option>
+                <option value="15h_17h">15h - 17h</option>
+                <option value="17h_19h">17h - 19h</option>
+                <option value="19h_21h">19h - 21h</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="comment">Comments?</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <textarea id="comment" rows="6" cols="45"></textarea>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      </aside>
+
+      <fieldset>
+        <legend class="info">Your Information</legend>
+        <table>
+          <tr>
+            <td>
+              <label for="full_name">Full Name</label>
+              <input type="text" id="full_name" name="full_name" size="30" maxlength="50" required>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="address"></label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="address">Street</label>
+              <input type="text" id="address" name="address" size="30" maxlength="100" required
+                placeholder="123 rue ABC">
+            </td>
+            <td>
+              <label for="city" class="cityLb">City</label>
+              <input type="text" id="city" name="city" size="5" maxlength="20" required>
+            </td>
+            <td>
+              <label for="zip" class="zipLb">Postal Code</label>
+              <input type="text" id="zip" name="zip" size="5" maxlength="10" required placeholder="H1N 3B9"
+                pattern="[ABCEGHJ-NPRSTVXY][0-9][ABCEGHJ-NPRSTV-Z] [0-9][ABCEGHJ-NPRSTV-Z][0-9]">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="phone">Telephone</label>
+              <input type="tel" id="phone" name="phone" size="30" maxlength="10" placeholder="5149154321" required
+                pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="email">Email (optional)</label>
+              <input type="email" id="email" name="email" size="30" maxlength="20" placeholder="email@host.com"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                title="Invalid email address! For example email@host.com">
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      </aside>
+
+      <fieldset>
+        <legend>Payment</legend>
+        <table>
+          <tr>
+            <td>
+              <label for="card">Cards</label>
+              <input type="radio" id="debit" name="card" required>
+              <label for="debit">Debit</label>
+              <input type="radio" id="credit" name="card">
+              <label for="credit">Credit</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="cname">Name on Card</label>
+              <input type="text" id="cname" name="cardname" size="40" maxlength="50" required>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="cnum">Card Number</label>
+              <input type="text" id="cnum" name="cardnumber" size="40" maxlength="20" placeholder="1111 2222 3333 4444"
+                required pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}$">
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="expDate">Expired Date</label>
+              <select name='expireMM' id='expireMM' required>
+                <option value=''>Month</option>
+                <option value='01'>January</option>
+                <option value='02'>February</option>
+                <option value='03'>March</option>
+                <option value='04'>April</option>
+                <option value='05'>May</option>
+                <option value='06'>June</option>
+                <option value='07'>July</option>
+                <option value='08'>August</option>
+                <option value='09'>September</option>
+                <option value='10'>October</option>
+                <option value='11'>November</option>
+                <option value='12'>December</option>
               </select>
               <select name='expireYY' id='expireYY' required>
                 <option value=''>Year</option>
@@ -173,27 +190,28 @@ PeiDi Yang, 261064524. -->
                 <option value='25'>2025</option>
                 <option value='26'>2026</option>
                 <option value='27'>2027</option>
-            </select> 
-                <label for="cvv">CVV</label>
-                <input type="text" id="cvv" name="cvv" placeholder="352" size = "3" required> 
-              </td>
-            </tr>
-            </table>
-          </fieldset>             
-          <div id="paymentBtn" >                
-            <button type="submit" id="payment">Submit</button>    
-          </div>
-        </form>
-        <form action="delivery.html">
-          <div id="previousBtn">                
-            <button type="submit" id="previous">Previous</button>  
-          </div>
-        </form>
+              </select>
+              <label for="cvv">CVV</label>
+              <input type="text" id="cvv" name="cvv" placeholder="352" size="3" required>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <div id="paymentBtn">
+        <button type="submit" id="payment">Submit</button>
+      </div>
+    </form>
+    <form action="delivery.html">
+      <div id="previousBtn">
+        <button type="submit" id="previous">Previous</button>
+      </div>
+    </form>
   </main>
   <footer>
     <p>&copy Copyright 2022. All Rights Reserved.</p>
 
-    <p><a href="mailto:thi.kieu@mail.mcgill.ca">Contact us by email</a></p>  
+    <p><a href="mailto:thi.kieu@mail.mcgill.ca">Contact us by email kieutra@gmail.com</a></p>
   </footer>
 </body>
+
 </html>

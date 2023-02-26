@@ -24,6 +24,7 @@ fieldset{
   border: 3px dotted  black;
   padding: 2rem;
 }
+
 /* table{
   width: 400px;
   padding: 0 1rem;
@@ -38,6 +39,7 @@ fieldset:nth-child(2) table{
   table-layout: fixed;
   padding: 0 1rem;
 }
+
 legend{
   font-size: 2rem;
   font-weight: 600;
